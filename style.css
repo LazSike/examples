@@ -1,0 +1,187 @@
+
+@font-face {
+    font-family: "Regular";
+    src: url("fonts/SamsungOne-400C.woff2") format("woff");
+}
+@font-face {
+    font-family: "Bold";
+    src: url("fonts/SamsungSharpSans-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Medium";
+    src: url("fonts/SamsungSharpSans-Medium.woff2") format("woff");
+}
+:root{
+
+    --copy-margin: 8px;
+    --bannerWidth: 300px;
+    --bannerHeight: 250px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    }
+body {
+  
+    background-color: transparent;
+}
+
+#content {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    overflow: hidden;
+   
+}
+
+#main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:calc(var(--bannerWidth));
+    height:calc(var(--bannerHeight));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity:0%;
+}
+
+#border {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #000;
+}
+
+#clicktag {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+#whiteout {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+}
+
+
+.image {
+    transform-origin: top left;
+    transform: translate3d(0px, 0px, 0px) scale(0.5) rotate(0.01deg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+}
+
+#animation_timeline {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.copy {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    font-family: Medium;
+    margin:var(--copy-margin);
+    word-wrap: break-word;
+}
+
+#bg {
+    background-color: black;
+}
+
+#copy1 {
+    position: absolute;
+    width:calc(var(--bannerWidth) - var(--copy-margin)*2);
+    bottom:calc(var(--bannerHeight)*0.15);
+    left:0;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "Medium";
+    text-align: center;
+    
+    
+}
+#copy2 {
+    position: absolute;
+    width:calc(var(--bannerWidth) - var(--copy-margin)*2);
+    bottom:calc(var(--bannerHeight)*0.1);
+    left:0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Medium";
+    text-align: center;
+    
+    
+}
+#copy3 {
+    position: absolute;
+    width:calc(var(--bannerWidth) - var(--copy-margin)*2);
+    bottom:calc(var(--bannerHeight)*0.35);
+    left:0;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "Medium";
+    text-align: center;
+    
+    
+}
+#terms {
+    position:absolute;
+    left: 0;
+    bottom:0;
+    color: #ffffff;
+    font-family: "Regular";
+    font-size: 7px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#cta{
+    width: 120px;
+    bottom:45px;
+    left:90px;
+    position:absolute;
+    background-color: white;
+    padding:13px 10px 10px 10px;
+    font-size: 14px;
+    font-family: "Bold";
+    color:#27448f;
+    border: 2px solid #27448f;
+    border-radius: 15px;
+    outline:none;
+    cursor:pointer;
+    opacity:1;
+
+
+}
+#circle {
+    position: absolute;
+    transform: translateY(-92%);
+    width:var(--bannerWidth);
+    height: var(--bannerWidth);
+    border:1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    
+  
+}
